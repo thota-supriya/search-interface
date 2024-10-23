@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Dropdown</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #B3D3FA; /* Blue background color */
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            background-color: #C6006E; /* Dropdown background color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 5px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .search-bar {
+            display: flex;
+            border: 2px solid #C6006E; /* Border color */
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left: 0px;
+        }
+
+        .search-bar input {
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            outline: none;
+            width: 300px;
+        }
+
+        .search-bar button {
+            background-color: #C6006E; /* Search button background */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- Search Dropdown Section -->
+    <div class="search-container">
+        <!-- Dropdown -->
+        <div class="dropdown">
+            <button class="dropdown-toggle">Everything</button>
+            <div class="dropdown-content">
+                <a href="#">Everything</a>
+                <a href="#">Software Development</a>
+                <a href="#">Web Development</a>
+                <a href="#">Data Analyst</a>
+                <a href="#">IT Consultant</a>
+                <a href="#">Network Administrator</a>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search Anything">
+            <button type="submit">&#128269;</button> <!-- Search icon -->
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
